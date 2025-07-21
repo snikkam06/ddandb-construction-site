@@ -3,7 +3,15 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { serviceCards } from '@/data/content';
-import { ArrowRightIcon, BuildingOfficeIcon, HomeIcon, WrenchScrewdriverIcon, BuildingLibraryIcon, BuildingStorefrontIcon, AcademicCapIcon } from '@heroicons/react/24/outline';
+import {
+  ArrowRightIcon,
+  BuildingOfficeIcon,
+  HomeIcon,
+  WrenchScrewdriverIcon,
+  BuildingLibraryIcon,
+  BuildingStorefrontIcon,
+  AcademicCapIcon,
+} from '@heroicons/react/24/outline';
 
 const iconMap = {
   'Hotel Construction': BuildingStorefrontIcon,
@@ -31,25 +39,28 @@ export default function ServicesGrid() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="inline-flex items-center px-3 py-1 mb-4 rounded-full bg-accent-copper/10 text-accent-copper font-medium text-sm"
+            className="mb-4 inline-flex items-center rounded-full bg-accent-copper/10 px-3 py-1 text-sm font-medium text-accent-copper"
           >
-            <span className="w-2 h-2 bg-accent-copper rounded-full mr-2"></span>
+            <span className="mr-2 h-2 w-2 rounded-full bg-accent-copper"></span>
             Our Services
           </motion.div>
 
-          <h2 className="mb-6 text-3xl md:text-4xl font-bold text-brand-700">
+          <h2 className="mb-6 text-3xl font-bold text-brand-700 md:text-4xl">
             Construction Excellence Across Industries
           </h2>
-          
-          <p className="mx-auto max-w-3xl text-large text-muted leading-relaxed">
-            Specialized construction services delivered by experienced professionals with proven expertise in commercial, hospitality, multi-family, and civic projects.
+
+          <p className="text-large text-muted mx-auto max-w-3xl leading-relaxed">
+            Specialized construction services delivered by experienced
+            professionals with proven expertise in commercial, hospitality,
+            multi-family, and civic projects.
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {serviceCards.map((service, index) => {
-            const IconComponent = iconMap[service.title as keyof typeof iconMap];
-            
+            const IconComponent =
+              iconMap[service.title as keyof typeof iconMap];
+
             return (
               <motion.div
                 key={service.title}
@@ -69,31 +80,28 @@ export default function ServicesGrid() {
                       className="object-cover transition-transform duration-300 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-brand-900/60 via-brand-900/20 to-transparent"></div>
-                    
+
                     {/* Icon */}
-                    <div className="absolute top-4 right-4 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-lg flex items-center justify-center group-hover:bg-accent-copper group-hover:text-white transition-all duration-200">
-                      {IconComponent && <IconComponent className="w-6 h-6 text-brand-700 group-hover:text-white transition-colors" />}
-                    </div>
-                    
-                    {/* Project Count Badge */}
-                    <div className="absolute bottom-4 left-4 px-3 py-1 bg-accent-copper/90 backdrop-blur-sm rounded-md text-white text-sm font-medium">
-                      {index === 0 ? '150+' : index === 1 ? '75+' : index === 2 ? '200+' : index === 3 ? '25+' : index === 4 ? '30+' : '50+'} Projects
+                    <div className="absolute right-4 top-4 flex h-12 w-12 items-center justify-center rounded-lg bg-white/90 backdrop-blur-sm transition-all duration-200 group-hover:bg-accent-copper group-hover:text-white">
+                      {IconComponent && (
+                        <IconComponent className="h-6 w-6 text-brand-700 transition-colors group-hover:text-white" />
+                      )}
                     </div>
                   </div>
 
                   {/* Card Content */}
                   <div className="p-6">
-                    <h3 className="mb-4 text-xl font-bold text-brand-700 group-hover:text-brand-600 transition-colors duration-200">
+                    <h3 className="mb-4 text-xl font-bold text-brand-700 transition-colors duration-200 group-hover:text-brand-600">
                       {service.title}
                     </h3>
-                    <p className="text-muted leading-relaxed mb-6">
+                    <p className="text-muted mb-6 leading-relaxed">
                       {service.blurb}
                     </p>
-                    
+
                     {/* Learn More Link */}
-                    <button className="inline-flex items-center text-accent-copper font-semibold hover:text-brand-700 transition-colors duration-200">
+                    <button className="inline-flex items-center font-semibold text-accent-copper transition-colors duration-200 hover:text-brand-700">
                       Learn More
-                      <ArrowRightIcon className="w-4 h-4 ml-2 transition-transform duration-200 group-hover:translate-x-1" />
+                      <ArrowRightIcon className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
                     </button>
                   </div>
                 </div>

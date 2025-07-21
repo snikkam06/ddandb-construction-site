@@ -23,32 +23,31 @@ export default function Hero() {
 
       {/* Subtle grid pattern overlay */}
       <div className="absolute inset-0 z-10 opacity-10">
-        <div 
+        <div
           className="h-full w-full"
           style={{
             backgroundImage: `
               linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
               linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)
             `,
-            backgroundSize: '50px 50px'
+            backgroundSize: '50px 50px',
           }}
         />
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-6 relative z-10 text-white max-w-7xl">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center min-h-screen">
-          
+      <div className="container relative z-10 mx-auto max-w-7xl px-6 text-white">
+        <div className="grid min-h-screen grid-cols-1 items-center gap-16 lg:grid-cols-2">
           {/* Left Column - Main Content */}
           <div className="space-y-8">
-            {/* Professional Badge - Styled like "UPCOMING LAUNCH" */}
+            {/* Professional Badge */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-sm font-medium tracking-widest text-gray-400 uppercase"
+              className="text-sm font-medium uppercase tracking-widest text-gray-400"
             >
-              UPCOMING PROJECT
+              COMMERCIAL BUILDERS
             </motion.div>
 
             {/* Main Title - Large and Bold like "ORION ONE MISSION" */}
@@ -56,9 +55,9 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight"
+              className="text-5xl font-bold leading-tight md:text-6xl lg:text-7xl xl:text-8xl"
             >
-              <span className="block text-white mb-2">DD&B</span>
+              <span className="mb-2 block text-white">DD&B</span>
               <span className="block text-white">CONSTRUCTION</span>
             </motion.h1>
 
@@ -67,7 +66,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl md:text-2xl text-gray-300 font-light leading-relaxed max-w-lg"
+              className="max-w-lg text-xl font-light leading-relaxed text-gray-300 md:text-2xl"
             >
               {heroContent.subtitle}
             </motion.p>
@@ -77,7 +76,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-gray-400 leading-relaxed max-w-lg"
+              className="max-w-lg leading-relaxed text-gray-400"
             >
               {heroContent.description}
             </motion.p>
@@ -92,7 +91,7 @@ export default function Hero() {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="inline-flex items-center justify-center px-8 py-4 text-sm font-medium tracking-widest uppercase border border-white/30 bg-transparent text-white hover:bg-white hover:text-black transition-all duration-300"
+                className="inline-flex items-center justify-center border border-white/30 bg-transparent px-8 py-4 text-sm font-medium uppercase tracking-widest text-white transition-all duration-300 hover:bg-white hover:text-black"
                 onClick={() => {
                   const element = document.getElementById('services');
                   element?.scrollIntoView({ behavior: 'smooth' });
@@ -104,7 +103,7 @@ export default function Hero() {
           </div>
 
           {/* Right Column - Stats */}
-          <div className="lg:justify-self-end space-y-8">
+          <div className="space-y-8 lg:justify-self-end">
             {/* Key Stats - Vertical layout */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
@@ -113,18 +112,30 @@ export default function Hero() {
               className="space-y-8"
             >
               <div className="text-right">
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2">43+</div>
-                <div className="text-sm font-medium tracking-wider text-gray-400 uppercase">Years of Excellence</div>
+                <div className="mb-2 text-4xl font-bold text-white md:text-5xl">
+                  43+
+                </div>
+                <div className="text-sm font-medium uppercase tracking-wider text-gray-400">
+                  Years of Excellence
+                </div>
               </div>
-              
+
               <div className="text-right">
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2">100%</div>
-                <div className="text-sm font-medium tracking-wider text-gray-400 uppercase">Completion Rate</div>
+                <div className="mb-2 text-4xl font-bold text-white md:text-5xl">
+                  100%
+                </div>
+                <div className="text-sm font-medium uppercase tracking-wider text-gray-400">
+                  Completion Rate
+                </div>
               </div>
-              
+
               <div className="text-right">
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2">8</div>
-                <div className="text-sm font-medium tracking-wider text-gray-400 uppercase">States Served</div>
+                <div className="mb-2 text-4xl font-bold text-white md:text-5xl">
+                  8
+                </div>
+                <div className="text-sm font-medium uppercase tracking-wider text-gray-400">
+                  States Served
+                </div>
               </div>
             </motion.div>
           </div>
@@ -139,12 +150,18 @@ export default function Hero() {
         className="absolute bottom-8 left-0 right-0 z-20"
       >
         <div className="container mx-auto px-6">
-          <div className="flex justify-between items-center text-xs font-medium tracking-wider text-gray-500 uppercase">
-            <div>DD&B Construction ©2025</div>
+          <div className="flex items-center justify-between text-xs font-medium uppercase tracking-wider text-gray-500">
+            <div>© DD&B Construction, Inc. All rights reserved.</div>
             <div className="flex space-x-8">
-              <span className="hover:text-white transition-colors cursor-pointer">Services</span>
-              <span className="hover:text-white transition-colors cursor-pointer">Projects</span>
-              <span className="hover:text-white transition-colors cursor-pointer">Contact</span>
+              <span className="cursor-pointer transition-colors hover:text-white">
+                Services
+              </span>
+              <span className="cursor-pointer transition-colors hover:text-white">
+                Projects
+              </span>
+              <span className="cursor-pointer transition-colors hover:text-white">
+                Contact
+              </span>
             </div>
           </div>
         </div>
@@ -155,7 +172,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1.4 }}
-        className="absolute bottom-20 left-1/2 -translate-x-1/2 text-white cursor-pointer group"
+        className="group absolute bottom-20 left-1/2 -translate-x-1/2 cursor-pointer text-white"
         onClick={() => {
           const element = document.getElementById('services');
           element?.scrollIntoView({ behavior: 'smooth' });
@@ -163,8 +180,8 @@ export default function Hero() {
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          className="w-[1px] h-16 bg-gradient-to-b from-transparent via-white to-transparent"
+          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+          className="h-16 w-[1px] bg-gradient-to-b from-transparent via-white to-transparent"
         />
       </motion.div>
     </section>

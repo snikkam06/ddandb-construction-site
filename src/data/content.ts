@@ -9,7 +9,8 @@ import {
 export const heroContent = {
   title: 'DD&B CONSTRUCTION',
   subtitle: 'Commercial Builders – Building Quality Since 1981',
-  description: 'Ground up commercial builders and general contractors with the expertise and financial stability to complete the project every time. That is DD&B Construction\'s legacy for almost 40 years. With every commercial building construction project, our goal is effective communication, reliability, and safety.',
+  description:
+    "Ground up commercial builders and general contractors with the expertise and financial stability to complete the project every time. That is DD&B Construction's legacy for almost 40 years. With every commercial building construction project, our goal is effective communication, reliability, and safety.",
   ctaText: 'Discuss Your Project',
   backgroundImage: '/images/exterior/SATWO_TX_SATWESTOVER_RI_EXTERIOR_DUSK.jpg',
 };
@@ -36,7 +37,7 @@ export const serviceCards: ServiceCard[] = [
   {
     title: 'Ground-Up Construction',
     blurb:
-      'DD&B Construction delivers turn-key commercial construction services that take a project from the planning stages through site preparation, construction and finish-out. We are there to ensure our clients\' total satisfaction through their move-in day.',
+      "DD&B Construction delivers turn-key commercial construction services that take a project from the planning stages through site preparation, construction and finish-out. We are there to ensure our clients' total satisfaction through their move-in day.",
     img: '/images/exterior/SATWO_TX_SATWESTOVER_RI_EXTERIOR_DUSK.jpg',
   },
   {
@@ -94,7 +95,7 @@ export const timelineEntries: TimelineEntry[] = [
     year: 'Mid-1980s',
     title: 'Mr. Mehta Takes Control',
     description:
-      'Mr. Mehta bought out the initial partners and set the company\'s sights on regional expansion, focusing on building the company\'s reputation for quality work and reliable project completion.',
+      "Mr. Mehta bought out the initial partners and set the company's sights on regional expansion, focusing on building the company's reputation for quality work and reliable project completion.",
   },
   {
     year: '1990s',
@@ -186,7 +187,7 @@ export const safetyProgram: SafetyProgramItem[] = [
   {
     title: 'LEED & Sustainable Construction',
     description:
-      'DD&B Construction works with our clients\' architects and engineers to ensure a smooth construction process while meeting project sustainability requirements. Whether the project is LEED-certified or not, we know that sustainable buildings are now the norm.',
+      "DD&B Construction works with our clients' architects and engineers to ensure a smooth construction process while meeting project sustainability requirements. Whether the project is LEED-certified or not, we know that sustainable buildings are now the norm.",
     points: [
       'LEED-certified project experience',
       'Green building construction expertise',
@@ -200,95 +201,113 @@ export const safetyProgram: SafetyProgramItem[] = [
 export const expertiseAreas = [
   {
     title: 'Hotel Construction',
-    description: 'Specialized expertise in hospitality construction from ground-up development to renovations.',
+    description:
+      'Specialized expertise in hospitality construction from ground-up development to renovations for major brands like Marriott, Hilton, Hyatt and IHG.',
     icon: '🏨',
-    projects: '150+ Hotel Projects Completed'
+    projects: 'Extensive portfolio of hotel projects',
   },
   {
     title: 'Multi-Family Construction',
-    description: 'Apartments, condominiums, and residential complexes with proven track record.',
+    description:
+      'Apartments, condominiums and residential complexes, including a 200‑unit development in Manor, Texas.',
     icon: '🏢',
-    projects: '75+ Multi-Family Developments'
+    projects: 'Trusted partner for multifamily developers',
   },
   {
     title: 'Commercial Office Buildings',
-    description: 'Professional office spaces, retail centers, and mixed-use developments.',
+    description:
+      'Professional office buildings, retail centers and mixed-use developments across the Mid-Atlantic and Texas.',
     icon: '🏢',
-    projects: '200+ Commercial Projects'
+    projects: 'Dozens of commercial projects delivered',
   },
   {
     title: 'Civic & Religious Buildings',
-    description: 'Schools, churches, and public buildings requiring specialized expertise.',
+    description:
+      'Schools, churches and civic buildings including public schools in Maryland and temple projects.',
     icon: '🏛️',
-    projects: '50+ Civic Projects'
+    projects: 'Experienced civic and religious builder',
   },
   {
     title: 'High Rise Construction',
-    description: 'Multi-story commercial buildings with complex structural requirements.',
+    description:
+      'Multi-story commercial buildings with complex structural requirements.',
     icon: '🏗️',
-    projects: '25+ High-Rise Projects'
+    projects: 'Proven high‑rise expertise',
   },
   {
     title: 'Modular Construction',
-    description: 'Innovative modular construction techniques for efficient project delivery.',
+    description:
+      'Innovative modular construction techniques for efficient project delivery.',
     icon: '🔧',
-    projects: '30+ Modular Projects'
-  }
+    projects: 'Modular solutions for accelerated schedules',
+  },
 ];
 
 export const companyInfo = {
-  tagline: "A Foundation of Achievement",
-  description: "DD&B Construction is built on a foundation of hard work, honest business practices, and a desire to achieve. Ground up commercial builders and general contractors with the expertise and financial stability to complete the project every time.",
-  goals: "With every commercial building construction project, our goal is effective communication, reliability, and safety.",
-  specialties: "DD&B Construction has made a name for itself for its work in hotel construction, multi-family construction of apartments and condos, the construction of schools, churches and other religious buildings, and commercial building construction, including retail centers and office buildings.",
-  founder: "The company was founded by Dolat Mehta, a civil engineer from India who first arrived in the United States in 1971.",
-  regions: "Serving the Mid-Atlantic region including Maryland, Virginia, New Jersey, Washington D.C., Pennsylvania, and Delaware",
-  headquarters: "17B Firstfield Road, Suite #203, Gaithersburg, Maryland 20878",
-  westOffice: "7300 Blanco Road, Suite 708, San Antonio, Texas 78216",
-  phonesMD: "301-869-8415",
-  phoneTX: "210-298-4499"
+  tagline: 'A Foundation of Achievement',
+  description:
+    'DD&B Construction is built on a foundation of hard work, honest business practices, and a desire to achieve. Ground up commercial builders and general contractors with the expertise and financial stability to complete the project every time.',
+  goals:
+    'With every commercial building construction project, our goal is effective communication, reliability, and safety.',
+  specialties:
+    'DD&B Construction has made a name for itself for its work in hotel construction, multi-family construction of apartments and condos, the construction of schools, churches and other religious buildings, and commercial building construction, including retail centers and office buildings.',
+  founder:
+    'The company was founded by Dolat Mehta, a civil engineer from India who first arrived in the United States in 1971.',
+  regions:
+    'Serving the Mid-Atlantic region including Maryland, Virginia, New Jersey, Washington D.C., Pennsylvania, and Delaware',
+  headquarters: '17B Firstfield Road, Suite #203, Gaithersburg, Maryland 20878',
+  westOffice: '7300 Blanco Road, Suite 708, San Antonio, Texas 78216',
+  phonesMD: '301-869-8415',
+  phoneTX: '210-298-4499',
 };
 
 // Awards and Recognition
 export const awards = [
   {
-    title: "ENR Top 400 Contractors",
-    year: "2024",
-    description: "Recognized among the nation's top construction contractors"
+    title: 'Best Hotel Contractors in San Antonio',
+    year: '2021',
+    description:
+      'Recognized by SanAntonioArchitects.org for excellence in hospitality construction',
   },
   {
-    title: "TEXO Building Excellence Award",
-    year: "2023",
-    description: "Outstanding achievement in commercial construction"
+    title: 'Bonding Agent Endorsement',
+    year: '1984–Present',
+    description:
+      'Marsh & McLennan notes DD&B has never had a bond request declined',
   },
   {
-    title: "40+ Years Excellence",
-    year: "2021",
-    description: "Celebrating four decades of quality construction"
+    title: '40+ Years of Excellence',
+    year: '1981–Present',
+    description:
+      'Over four decades of quality construction across multiple states',
   },
   {
-    title: "100% Completion Rate",
-    year: "Ongoing",
-    description: "Maintained perfect project completion record"
-  }
+    title: '100% Completion Rate',
+    year: 'Ongoing',
+    description: 'Maintained a perfect project completion record',
+  },
 ];
 
 // Company Culture and Values
 export const companyValues = [
   {
-    title: "Communication",
-    description: "DD&B knows what is important to clients: Communication. Clear, consistent communication throughout every project."
+    title: 'Communication',
+    description:
+      'DD&B knows what is important to clients: Communication. Clear, consistent communication throughout every project.',
   },
   {
-    title: "Expertise",
-    description: "Over 40 years of construction expertise and proven proficiency across multiple sectors and building types."
+    title: 'Expertise',
+    description:
+      'Over 40 years of construction expertise and proven proficiency across multiple sectors and building types.',
   },
   {
-    title: "Reliability",
-    description: "Financial stability and 100% project completion record ensures reliable project delivery every time."
+    title: 'Reliability',
+    description:
+      'Financial stability and 100% project completion record ensures reliable project delivery every time.',
   },
   {
-    title: "Quality Work",
-    description: "Honest business practices and a desire to achieve excellence in every commercial construction project."
-  }
+    title: 'Quality Work',
+    description:
+      'Honest business practices and a desire to achieve excellence in every commercial construction project.',
+  },
 ];
