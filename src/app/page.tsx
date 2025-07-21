@@ -7,11 +7,13 @@ import TestimonialCarousel from '@/components/TestimonialCarousel';
 import SafetyProgram from '@/components/SafetyProgram';
 import Awards from '@/components/Awards';
 import CompanyValues from '@/components/CompanyValues';
+import QuickFacts from '@/components/QuickFacts';
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <QuickFacts />
       <ServicesGrid />
       <Stats />
       <ExpertiseAreas />

@@ -8,7 +8,7 @@ import {
 
 export const heroContent = {
   title: 'DD&B CONSTRUCTION',
-  subtitle: 'Commercial Builders – Building Quality Since 1981',
+  subtitle: 'Full-service general contracting built on hard work, honest business practices, and a desire to achieve since 1981.',
   description:
     "Ground up commercial builders and general contractors with the expertise and financial stability to complete the project every time. That is DD&B Construction's legacy for almost 40 years. With every commercial building construction project, our goal is effective communication, reliability, and safety.",
   ctaText: 'Discuss Your Project',
